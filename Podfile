@@ -64,62 +64,62 @@ def shared_pods
   # pod "YouboraAVPlayerAdapter", '6.6.1'
 end
 
-target 'cadenaSer' do
-  workspace 'cadenaSer'
-  project 'cadenaSer'
+# target 'cadenaSer' do
+#   workspace 'cadenaSer'
+#   project 'cadenaSer'
   
-  shared_pods
-end
+#   shared_pods
+# end
 
 
-target 'cadenaSerMock' do
-  workspace 'cadenaSer'
-  project 'cadenaSer'
+# target 'cadenaSerMock' do
+#   workspace 'cadenaSer'
+#   project 'cadenaSer'
   
-  shared_pods
-end
+#   shared_pods
+# end
 
-target 'radioCaracol' do
-  workspace 'cadenaSer'
-  project 'cadenaSer'
+# target 'radioCaracol' do
+#   workspace 'cadenaSer'
+#   project 'cadenaSer'
   
-  shared_pods
-end
+#   shared_pods
+# end
 
 
-target 'radioCaracolMock' do
-  workspace 'cadenaSer'
-  project 'cadenaSer'
+# target 'radioCaracolMock' do
+#   workspace 'cadenaSer'
+#   project 'cadenaSer'
   
-  shared_pods
-end
+#   shared_pods
+# end
 
-target 'cadenaSerMockExtension' do
-  workspace 'cadenaSer'
+# target 'cadenaSerMockExtension' do
+#   workspace 'cadenaSer'
   
-  # Airship
-  pod 'AirshipExtensions/NotificationService'
+#   # Airship
+#   pod 'AirshipExtensions/NotificationService'
   
-end
+# end
 
-target 'ServiceExtension' do
-  workspace 'cadenaSer'
+# target 'ServiceExtension' do
+#   workspace 'cadenaSer'
   
-  # Airship
-  pod 'AirshipExtensions/NotificationService'
+#   # Airship
+#   pod 'AirshipExtensions/NotificationService'
   
-end
+# end
 
-target 'cadenaSerTests' do
-  workspace 'cadenaSer'
-  project 'cadenaSer'
+# target 'cadenaSerTests' do
+#   workspace 'cadenaSer'
+#   project 'cadenaSer'
     
-end
+# end
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings["DEVELOPMENT_TEAM"] = "N2C87TQ9VP"
-    end
-  end
-end
+# post_install do |installer|
+#   installer.pods_project.targets.each do |target|
+#     target.build_configurations.each do |config|
+#       config.build_settings["DEVELOPMENT_TEAM"] = "N2C87TQ9VP"
+#     end
+#   end
+# end
