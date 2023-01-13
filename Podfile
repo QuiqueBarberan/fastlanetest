@@ -64,12 +64,12 @@ def shared_pods
   # pod "YouboraAVPlayerAdapter", '6.6.1'
 end
 
-# target 'cadenaSer' do
-#   workspace 'cadenaSer'
-#   project 'cadenaSer'
+target 'cadenaSer' do
+  workspace 'cadenaSer'
+  project 'cadenaSer'
   
-#   shared_pods
-# end
+  shared_pods
+end
 
 
 # target 'cadenaSerMock' do
