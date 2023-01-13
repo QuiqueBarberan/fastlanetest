@@ -1,0 +1,23 @@
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
+#
+# ----------------------------------------------------------------------------------------------------
+#
+# The bundle identifier of your app
+app_identifier "com.prisacom.AS"
+# Your Apple email address
+apple_id "apps.noticias@t-prisa.com"
+#
+# ----------------------------------------------------------------------------------------------------
+#
+# Apple Developer Account
+apple_dev_portal_id "apps.noticias@t-prisa.com"
+# App Store Connect Account
+itunes_connect_id "apps.noticias@t-prisa.com"
+#
+# ----------------------------------------------------------------------------------------------------
+#
+# Developer Portal Team ID
+team_id "H8ZZA4SVYD"
+# App Store Connect Team ID
+itc_team_id "H8ZZA4SVYD"
