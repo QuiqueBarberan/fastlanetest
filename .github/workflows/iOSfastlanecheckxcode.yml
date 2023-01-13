@@ -18,7 +18,11 @@ jobs:
       - name: FastLane
         run: |
           sudo gem install fastlane
-
+          
+      - name: Install Dependencies
+        run: |
+         pod install --no-repo-update
+         
       - name: XCPDE Build
         run: |
           xcodebuild -version
