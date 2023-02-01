@@ -1,0 +1,27 @@
+name: Testing fastlane in ubuntu
+ 
+on:
+  workflow_dispatch:
+
+env:
+  APP_BUILD: 0
+
+jobs:
+  testingfastlane:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+ 
+      - name: Set up Ruby 3.0
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.0' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: FastLane
+        run: |
+          sudo gem install fastlane
+
+      - name: Installing cocoapods
+        run: |
+         sudo gem install cocoapods
